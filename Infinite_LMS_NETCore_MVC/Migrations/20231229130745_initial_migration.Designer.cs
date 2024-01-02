@@ -9,11 +9,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Infinite_LMS_NETCore_MVC.Data.Migrations
+namespace Infinite_LMS_NETCore_MVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231227042901_Add_Custom_tables")]
-    partial class Add_Custom_tables
+    [Migration("20231229130745_initial_migration")]
+    partial class initial_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

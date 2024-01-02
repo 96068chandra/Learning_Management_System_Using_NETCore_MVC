@@ -1,0 +1,1 @@
+﻿Before Adding items into categoryitem table insert data into mediatype table

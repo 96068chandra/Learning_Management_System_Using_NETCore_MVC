@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Infinite_LMS_NETCore_MVC.Interfaces;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Infinite_LMS_NETCore_MVC.Entity
 {
-    public class MediaType
+    public class MediaType:IPrimaryProperties
     {
         public int Id { get; set; }
         [Required]
