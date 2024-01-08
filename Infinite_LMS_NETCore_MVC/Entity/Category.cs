@@ -20,8 +20,6 @@ namespace Infinite_LMS_NETCore_MVC.Entity
             UserCategory = new List<UserCategory>();
         }
         [ForeignKey("CategoryId")]
-
-
         public ICollection <CategoryItem> CategoryItems { get; set; }
         [ForeignKey("CategoryId")]
         public virtual ICollection<UserCategory> UserCategory { get; set; }

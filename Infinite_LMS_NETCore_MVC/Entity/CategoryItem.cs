@@ -30,6 +30,8 @@ namespace Infinite_LMS_NETCore_MVC.Entity
         public virtual ICollection<SelectListItem> MediaTypes {  get; set; }
 
         public DateTime DateTimeItemReleased { get; set; }
+        [NotMapped]
+        public int ContentId { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Infinite_LMS_NETCore_MVC.Entity
 {
@@ -12,8 +13,13 @@ namespace Infinite_LMS_NETCore_MVC.Entity
         public string HtmlContent { get; set; }
 
         public string VideoLink { get; set; }
-
+        
+   
         public CategoryItem CategoryItem { get; set; }
+        [NotMapped]
+        public int CatItemId { get; set; }
+        [NotMapped]
+        public int CategoryId { get; set; }
 
     }
 }
